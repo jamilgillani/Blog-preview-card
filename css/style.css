@@ -1,0 +1,126 @@
+/* 1. Use a more-intuitive box-sizing model */
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
+  
+  /* 2. Remove default margin */
+  * {
+    margin: 0;
+  }
+  
+  body {
+    /* 3. Add accessible line-height */
+    line-height: 1.5;
+    /* 4. Improve text rendering */
+    -webkit-font-smoothing: antialiased;
+    font-family: "Figtree", sans-serif;
+    background-color: hsl(47, 88%, 63%);
+  }
+  
+  /* 5. Improve media defaults */
+  img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* 6. Inherit fonts for form controls */
+  input, button, textarea, select {
+    font: inherit;
+  }
+  
+  /* 7. Avoid text overflows */
+  p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+  }
+  
+  /* 8. Improve line wrapping */
+  p {
+    text-wrap: pretty;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+  }
+  
+  /*
+    9. Create a root stacking context
+  */
+  #root, #__next {
+    isolation: isolate;
+  }
+
+  .blog-category{
+    color: black;
+    font-weight: 800;
+    padding: .5rem .8rem;
+    border-radius: .2rem;
+    background-color: hsl(47, 88%, 63%);
+    display: inline-block;
+  }
+
+  .blog-meta {
+    font-size: 0.9rem;
+    color: black;
+
+  }
+
+  .blog-title {
+    color: black;
+    font-weight: 800;
+    font-size: 1.4rem;
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+
+  .blog-title:hover {
+    color: hsl(47, 88%, 63%);
+  }
+
+  .author-name {
+    color: black;
+    font-weight: 800;
+    font-size: 0.9rem;
+  }
+
+  /* Layout styles */
+
+  .container{
+    display: grid;
+    place-items: center;
+    height: 100dvh;
+
+  }
+
+  .card {
+    background-color:hsl(0, 0%, 100%);
+    max-width:23em;
+    padding: 1.5rem;
+    margin: 0 1.5rem;
+    border-radius:1rem;
+    box-shadow: 6px 6px 0 black;
+    transition: box shadow 0.3s ease;
+  }
+
+  .card:hover {
+    box-shadow: 7px 7px 0 black;
+  }
+
+  .card > * + * {
+    margin-top: 0.5rem;
+  }
+
+  .blog-img{
+    border-radius: 0.5rem;
+  }
+  .user-data{
+    display: flex;
+    align-items: center;
+    gap:1rem;
+  }
+
+  .author-img {
+    width:3rem;
+  }
+
+  .author-img{
+    width: 3rem;
+  }
